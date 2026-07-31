@@ -14,6 +14,8 @@ This work extends operational IAM experience I already have administering ERP ac
 
 After studying inconsistently through the first half of 2026, I decided to take a more serious, structured approach to building Azure skills. I spent time working with AI tools (ChatGPT and Claude) to design the framework behind this project series — mapping each project to specific AZ-104 exam objectives and to the skills that matter most for IAM, cloud security, and AI-adjacent roles — and then built it out hands-on from there.
 
+> [!IMPORTANT]
+> This portfolio is a work in progress. Some directories, pages, or links below may be incomplete or not yet live.
 ---
 
 ## Project Index
