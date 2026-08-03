@@ -44,7 +44,7 @@ Spending too much time trying to mimic a "real world" example of a business.
 
 
 ## Cost
-Set up **Azure Budgets** with an alert at 50%/75%/90% of a monthly cap. (I set the cap here to $20 so I am not hit with an surprise monthly bill; however, this is easily scalable to meet any risk management needs of a business)
+- Set up **Azure Budgets** with an alert at 50%/75%/90% of a monthly cap. (I set the cap here to $20 so I am not hit with an surprise monthly bill; however, this is easily scalable to meet any risk management needs of a business)
 - Enable **Cost Management + Billing → Cost alerts** via email.
 - Use **B1s burstable VMs** (free-tier eligible, 750 hrs/month for 12 months) and **deallocate (not just stop)** VMs immediately after each lab session — deallocating stops compute billing.
 - Prefer **PaaS/serverless free tiers** over always-on VMs wherever project allows it 
