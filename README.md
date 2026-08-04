@@ -58,7 +58,7 @@ Each project folder contains its own README with:
 - **Challenges & What I'd Do Differently**
 - **Cost** — what it actually cost to run
 
-`docs/architecture-diagrams/` holds the full-size diagrams referenced across projects. `09-iac-bicep/` holds the Bicep modules and PowerShell scripts that automate Projects 1, 2, and 6.
+`docs/architecture-diagrams/` holds the full-size diagrams referenced across projects. `09-iac-bicep/` holds the scripts that automate projects.
 
 ---
 
