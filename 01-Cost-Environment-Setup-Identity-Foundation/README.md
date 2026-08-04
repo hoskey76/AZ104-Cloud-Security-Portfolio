@@ -72,4 +72,7 @@ $0.00
 
 
 ## Screenshots / Diagrams 🚧
+![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Dynamic%20groups.svg)
+
+
 (redact tenant IDs, subscription IDs, and any real emails/usernames)
