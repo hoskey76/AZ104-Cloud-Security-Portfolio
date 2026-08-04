@@ -17,7 +17,7 @@ Stand up a Microsoft Entra ID (Azure AD) tenant for a small business with an org
 
 ## Architecture
 
-![Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/aa6a43a6ca985f88a88fbe6ee91e8a4e38dae3ec/docs/architecture-diagrams/01-identity-foundation/01-identity-foundation.svg)
+![Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/docs/architecture-diagrams/01-identity-foundation/01-identity-foundations.svg)
 
 
 This tenant models a 5 department org structure. Dynamic groups assign membership automatically based on user attribute rather than manual group management, and every user is subject to a MFA registration policy at the tenant level. This mirrors real ERP access administration — automated group assignment reduces manual provisioning overhead while enforcing a consistent baseline security policy on every account from day one.
