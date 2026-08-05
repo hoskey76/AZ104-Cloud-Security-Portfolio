@@ -71,7 +71,7 @@ $0.00
 
 
 
-## Screenshots / Diagrams 🚧
+## Screenshots / Diagrams 
 
 
 ### Budget Creation
