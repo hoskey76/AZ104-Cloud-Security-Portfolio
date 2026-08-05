@@ -22,7 +22,7 @@ After studying inconsistently through the first half of 2026, I decided to take 
 
 | # | Project | Core Skills | Status |
 |---|---------|-------------|--------|
-| 01 | [Cost & Environment Setup / Identity Foundation](./01-Cost-Environment-Setup-Identity-Foundation) | Entra ID users/groups, dynamic groups, MFA | 🚧 |
+| 01 | [Cost & Environment Setup / Identity Foundation](./01-Cost-Environment-Setup-Identity-Foundation) | Entra ID users/groups, dynamic groups, MFA | ✅ |
 | 02 | [RBAC & Governance at Scale](./02-rbac-governance) | Management groups, custom RBAC roles, Azure Policy | 🚧 |
 | 03 | [Conditional Access & PIM](./03-conditional-access-pim) | Conditional Access, Privileged Identity Management, access reviews | 🚧 |
 | 04 | [Secure Storage Design](./04-secure-storage) | SAS tokens, CMK encryption, lifecycle management | 🚧 |
