@@ -72,7 +72,23 @@ $0.00
 
 
 ## Screenshots / Diagrams 🚧
+
+
+### Budget Creation
+![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Create%20a%20Budget%201.png)
+
+
+### Budget Alerts
+![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Create%20a%20Budget%202.png)
+
+
+### Group Architecture
 ![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Dynamic%20groups.svg)
 
 
-(redact tenant IDs, subscription IDs, and any real emails/usernames)
+### Dynamic Group Rule (Rule Builder)
+![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Common%20Dynamic%20Rule.png)
+
+
+### Dynamic Group Rule (Manual Query)
+![Dynamic Group Architecture Diagram - Identity Foundation](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/01-Cost-Environment-Setup-Identity-Foundation/Files/Leadership%20Dynamic%20Rule.png)
