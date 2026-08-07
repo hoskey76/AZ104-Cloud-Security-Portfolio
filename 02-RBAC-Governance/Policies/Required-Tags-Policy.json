@@ -1,0 +1,86 @@
+{
+  "properties": {
+    "displayName": "Require environment and department tags with approved values",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies creation or update of resources that are missing an 'environment' or 'department' tag, or that use a value outside the approved list for either tag.",
+    "metadata": {
+      "category": "Tags",
+      "version": "1.0.1"
+    },
+    "parameters": {
+      "environmentTagValues": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Approved environment tag values",
+          "description": "The allowed values for the 'environment' tag."
+        },
+        "defaultValue": [
+          "Production",
+          "UAT",
+          "DEV",
+          "Test"
+        ]
+      },
+      "departmentTagValues": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Approved department tag values",
+          "description": "The allowed values for the 'department' tag."
+        },
+        "defaultValue": [
+          "Sales",
+          "IT",
+          "Engineering",
+          "Marketing",
+          "Customer Service"
+        ]
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Deny blocks non-compliant resources; Audit flags them without blocking."
+        },
+        "allowedValues": [
+          "Deny",
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          {
+            "field": "tags['environment']",
+            "exists": "false"
+          },
+          {
+            "not": {
+              "field": "tags['environment']",
+              "in": "[parameters('environmentTagValues')]"
+            }
+          },
+          {
+            "field": "tags['department']",
+            "exists": "false"
+          },
+          {
+            "not": {
+              "field": "tags['department']",
+              "in": "[parameters('departmentTagValues')]"
+            }
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+   "id": "/providers/Microsoft.Authorization/policyDefinitions/[value]",
+   "type": "Microsoft.Authorization/policyDefinitions",
+   "name": "[value]"
+}
