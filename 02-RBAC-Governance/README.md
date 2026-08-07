@@ -1,10 +1,16 @@
 # Project 2: RBAC & Governance 🚧 
 
-## Objective 🚧 
-One or two sentences: what problem this solves / what capability it demonstrates.
+## Objective
+Design and enforce a least-privilege access model across a multi-level Azure environment — using management group hierarchy, a custom RBAC role, and Azure Policy — rather than relying on Azure's built-in roles and default (unrestricted) subscription behavior.
 
-## AZ-104 Skills Covered 🚧 
-- Bullet list mapped to the official exam skills outline
+## AZ-104 Skills Covered
+- Manage role-based access control (RBAC)
+- Create and manage custom RBAC role definitions
+- Manage subscriptions and governance:
+    - Management groups
+    - Resource tags
+    - Azure Policy
+    - Resource locks
 
 ## Architecture 🚧 
 ### Management Groups
