@@ -1,4 +1,4 @@
-# Project 2: [RBAC & Governance] 🚧 
+# Project 2: RBAC & Governance 🚧 
 
 ## Objective 🚧 
 One or two sentences: what problem this solves / what capability it demonstrates.
@@ -7,8 +7,18 @@ One or two sentences: what problem this solves / what capability it demonstrates
 - Bullet list mapped to the official exam skills outline
 
 ## Architecture 🚧 
-[diagram image]
-Brief explanation of the design and any trade-offs made.
+### Management Groups
+Created 3 management groups to sit above the subscription. Policy and RBAC assignments made at the management group level apply automatically to everything below without per-resource-group configuration.
+
+
+![Management Groups Architectural Diagram](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/docs/architecture-diagrams/02-RBAC-Goverance/Management%20Groups%20Diagram.svg)
+
+### Policy
+Bundled five policies into a single initiative and assigned it at the `Workloads` management group.
+
+
+![Policy Initiative Architectural Diagram](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/docs/architecture-diagrams/02-RBAC-Goverance/Baseline%20Policy%20Intiative.svg)
+
 
 ## What I Built 🚧 
 Step-by-step narrative — explain *why*, not just *what*.
