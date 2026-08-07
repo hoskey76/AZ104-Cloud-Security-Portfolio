@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "roleName": "Storage Auditor",
+        "description": "Can view storage account configuration, network rules, and diagnostic settings, but cannot modify, delete, or access data plane (blob/file/queue/table contents).",
+        "assignableScopes": [
+            "/subscriptions/subscription-id"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Storage/storageAccounts/read",
+                    "Microsoft.Storage/storageAccounts/blobServices/read",
+                    "Microsoft.Storage/storageAccounts/fileServices/read",
+                    "Microsoft.Storage/storageAccounts/queueServices/read",
+                    "Microsoft.Storage/storageAccounts/tableServices/read",
+                    "Microsoft.Storage/storageAccounts/privateEndpointConnections/read",
+               "Microsoft.Authorization/*/read",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Insights/DiagnosticSettings/Read"
+                ],
+                "notActions": [
+                    "Microsoft.Storage/storageAccounts/listkeys/action"
+                ],
+                "dataActions": [],
+                "notDataActions": [
+                    "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+                    "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read"
+                ]
+            }
+        ]
+    }
+}
