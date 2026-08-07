@@ -42,10 +42,7 @@ What this cost to run, and how you kept it near-zero.
 (redact tenant IDs, subscription IDs, and any real emails/usernames)
 
 ### Custom Role (Storage Auditor)
-Below are screenshots from the Azure portal where the custom role `Storage Auditor` was defined, this can also be implemented through `Azure CLI`. 
-
-
-The `JSON` files for this role are located in [Custom-Roles](./Custom-Roles)
+Below are screenshots from the Azure portal where the custom role `Storage Auditor` was defined, this can also be implemented through `Azure CLI`. The `JSON` files for this role are located in [Custom-Roles](./Custom-Roles)
 
 #### Basics
 Role name and description are defined here.
