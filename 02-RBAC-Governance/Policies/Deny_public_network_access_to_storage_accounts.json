@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "displayName": "Deny public network access to storage accounts",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies creation or update of storage accounts that allow public network access, or that do not have a default network ACL action of Deny. Forces storage accounts toward private endpoints or explicit firewall allow rules.",
+    "metadata": {
+      "category": "Storage",
+      "version": "1.0.0"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Deny blocks non-compliant storage accounts; Audit flags them without blocking."
+        },
+        "allowedValues": [
+          "Deny",
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "anyOf": [
+              {
+                "field": "Microsoft.Storage/storageAccounts/publicNetworkAccess",
+                "notEquals": "Disabled"
+              },
+              {
+                "field": "Microsoft.Storage/storageAccounts/networkAcls.defaultAction",
+                "notEquals": "Deny"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}
