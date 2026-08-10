@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "displayName": "Governance Baseline",
+    "policyType": "Custom",
+    "description": "Bundles five foundational governance controls — required environment/department tagging, denied public network access to storage accounts, US-only allowed locations, restricted (burstable/free-tier) VM SKUs, and enforced HTTPS-only storage transfer — into a single policy set assigned at the 'Workloads' management group",
+    "metadata": {
+      "category": "Custom Policy",
+      "createdBy": [redacted],
+      "createdOn": [redacted],
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "version": "1.0.0",
+    "parameters": {},
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Allowed locations - US regions only_1",
+        "policyDefinitionId": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/microsoft.authorization/policydefinitions/[redacted]",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {},
+        "groupNames": [
+          "Resource"
+        ]
+      },
+      {
+        "policyDefinitionReferenceId": "Deny public network access to storage accounts_1",
+        "policyDefinitionId": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/microsoft.authorization/policydefinitions/[redacted]",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {},
+        "groupNames": [
+          "Storage"
+        ]
+      },
+      {
+        "policyDefinitionReferenceId": "Require environment and department tags with approved values_1",
+        "policyDefinitionId": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/microsoft.authorization/policydefinitions/[redacted]",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {},
+        "groupNames": [
+          "Resource"
+        ]
+      },
+      {
+        "policyDefinitionReferenceId": "Require secure transfer to storage accounts_1",
+        "policyDefinitionId": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/microsoft.authorization/policydefinitions/[redacted]",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {},
+        "groupNames": [
+          "Storage"
+        ]
+      },
+      {
+        "policyDefinitionReferenceId": "Allowed VM SKUs - burstable/free-tier only_1",
+        "policyDefinitionId": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/microsoft.authorization/policydefinitions/[redacted]",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {},
+        "groupNames": [
+          "Resource"
+        ]
+      }
+    ],
+    "policyDefinitionGroups": [
+      {
+        "name": "Resource",
+        "category": "Resource",
+        "displayName": "Resource Governance",
+        "description": "Controls that apply to how and where resources are deployed, independent of resource type - ownership traceability, region, and compute cost control."
+      },
+      {
+        "name": "Storage",
+        "category": "Storage",
+        "displayName": "Storage Security",
+        "description": "Controls specific to storage accounts - restricting network exposure and enforcing encrypted data transfer."
+      }
+    ],
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/providers/microsoft.management/managementgroups/[redacted]-workloads/providers/Microsoft.Authorization/policySetDefinitions/[redacted]",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": [redacted],
+  "systemData": {
+    "createdBy": [redacted],
+    "createdByType": "User",
+    "createdAt": "2026-08-10T22:57:59.7264674Z",
+    "lastModifiedBy": [redacted],
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2026-08-10T22:57:59.7264674Z"
+  }
+}
