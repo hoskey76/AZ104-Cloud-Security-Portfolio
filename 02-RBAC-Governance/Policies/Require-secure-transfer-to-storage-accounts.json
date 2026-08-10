@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "displayName": "Require secure transfer to storage accounts",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies creation or update of storage accounts that do not require HTTPS for data transfer. Prevents data from being read or written over unencrypted HTTP connections.",
+    "metadata": {
+      "category": "Custom Policy"      
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Deny blocks non-compliant storage accounts; Audit flags them without blocking."
+        },
+        "allowedValues": [
+          "Deny",
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly",
+            "notEquals": "true"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  }
+}
