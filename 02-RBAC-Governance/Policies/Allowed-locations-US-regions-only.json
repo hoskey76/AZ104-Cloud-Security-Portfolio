@@ -1,0 +1,70 @@
+{
+  "properties": {
+    "displayName": "Allowed locations - US regions only",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies creation of resources and resource groups outside of approved US Azure regions. Keeps data residency within the US and constrains the lab environment to a predictable, low-latency set of regions.",
+    "metadata": {
+      "category": "Custom Policy",
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "listOfAllowedLocations": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Allowed locations",
+          "description": "The list of Azure regions resources are allowed to be deployed to.",
+          "strongType": "location"
+        },
+        "defaultValue": [
+          "eastus",
+          "eastus2",
+          "centralus",
+          "northcentralus",
+          "southcentralus",
+          "westcentralus",
+          "westus",
+          "westus2",
+          "westus3"
+        ]
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Deny blocks non-compliant deployments; Audit flags them without blocking."
+        },
+        "allowedValues": [
+          "Deny",
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "location",
+            "notIn": "[parameters('listOfAllowedLocations')]"
+          },
+          {
+            "field": "location",
+            "notEquals": "global"
+          },
+          {
+            "field": "type",
+            "notEquals": "Microsoft.AzureActiveDirectory/b2cDirectories"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  }  
+}
