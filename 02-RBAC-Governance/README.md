@@ -133,3 +133,29 @@ This is where basic parameters and policy rule `JSON` is defined in the Azure po
 Once the policy has been created you can see the parameters defined here, under the `Parameters` tab.
 
 ![Screenshot of tag policy parameters in azure portal](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/02-RBAC-Governance/Files/Tag%20policy%20parameters.png)
+
+
+### Policy Initiative
+This initiative takes the 5 policies I created and bundles them together, assigns the initiative to `Workloads` and groups the policies together based on common attributes.
+
+#### Basics
+Define location, name, and description
+
+
+![Screenshot of initiative definition basics in azure portal]
+
+#### Policy
+Add policy definitions to initiative
+
+
+![Screenshot of initiative definition policy in azure portal]
+
+#### Groups
+Policy groups help to organize
+
+
+![Screenshot of initiative definition groups in azure portal]
+
+#### Confirmation
+
+![Screenshot of initiative definition confirmation in azure portal]
