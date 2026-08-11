@@ -1,4 +1,4 @@
-# Project 2: RBAC & Governance 🚧 
+# Project 2: RBAC & Governance
 
 ## Objective
 Design and enforce a least-privilege access model across a multi-level Azure environment — using management group hierarchy, a custom RBAC role, and Azure Policy — rather than relying on Azure's built-in roles and default (unrestricted) subscription behavior.
@@ -71,7 +71,7 @@ Even knowing the CLI would mean less friction, I'm planning to keep working thro
 $0. Management groups, RBAC role definitions/assignments, Azure Policy, and PIM for Azure resources are all included at no extra cost with an active Entra ID P2 license (this lab used the 30-day P2 trial, shared across this project and Project 3). The only resource created for testing (a small storage account) was deleted after confirming compliance behavior.
 
 
-## Screenshots / Diagrams 🚧 
+## Screenshots / Diagrams  
 
 
 ### Custom Role (Storage Auditor)
@@ -142,20 +142,20 @@ This initiative takes the 5 policies I created and bundles them together, assign
 Define location, name, and description
 
 
-![Screenshot of initiative definition basics in azure portal]
+![Screenshot of initiative definition basics in azure portal](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/02-RBAC-Governance/Files/Initiative%20definition%20-%20Basics.png)
 
 #### Policy
 Add policy definitions to initiative
 
 
-![Screenshot of initiative definition policy in azure portal]
+![Screenshot of initiative definition policy in azure portal](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/02-RBAC-Governance/Files/Initiative%20definition%20-%20Policies.png)
 
 #### Groups
 Policy groups help to organize
 
 
-![Screenshot of initiative definition groups in azure portal]
+![Screenshot of initiative definition groups in azure portal](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/02-RBAC-Governance/Files/Initiative%20definition%20-%20Groups.png)
 
 #### Confirmation
 
-![Screenshot of initiative definition confirmation in azure portal]
+![Screenshot of initiative definition confirmation in azure portal](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/02-RBAC-Governance/Files/Initiative%20definition%20-%20Confirmation.png)
