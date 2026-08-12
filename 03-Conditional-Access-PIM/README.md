@@ -26,7 +26,55 @@ Step-by-step narrative — explain *why*, not just *what*.
 Genuine reflection
 
 ## Cost 🚧
-What this cost to run, and how you kept it near-zero.
+Expected $0 — Conditional Access and PIM for Microsoft Entra roles are both included with the active Entra ID P2 trial carried over from Project 2. No billable Azure resources are required for this project.
+
 
 ## Screenshots / Diagrams 🚧
 (redact tenant IDs, subscription IDs, and any real emails/usernames)
+
+### Conditional Access
+Created four policy base sign-in requirements under conditional access
+
+#### Policies
+![]()
+
+#### Policy Example - Block Legacy Authentication
+![]()
+
+### PIM for Microsoft Entra Roles
+explanation of what role was assigned and that this is a test user
+
+#### User - Role Not Active
+![]()
+
+#### User - Role Eligible
+![]()
+
+#### User - Activate Role
+![]()
+
+#### User - Role Pending Approval
+![]()
+
+#### Administrator - Approve Request
+![]()
+
+#### Administrator - Grant Approval
+![]()
+
+#### User - Role Active Assignment
+![]()
+
+### Access Review
+
+#### Creation
+![]()
+
+#### Results
+![]()
+
+#### Approval
+![]()
+
+#### Outcome
+![]()
