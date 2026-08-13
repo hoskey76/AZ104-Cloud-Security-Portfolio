@@ -55,7 +55,7 @@ Expected $0 — Conditional Access and PIM for Microsoft Entra roles are both in
 ## Screenshots / Diagrams 🚧
 
 ### Conditional Access
-Created four policy base sign-in requirements under conditional access
+Added 4 policies to serve as base sign-in requirements under conditional access.
 
 #### Policies
 ![]()
@@ -64,13 +64,14 @@ Created four policy base sign-in requirements under conditional access
 ![]()
 
 #### What-IF Tool - Parameters
+This tool is extremely useful, kept me from having to manually test functionality. Thanks Claude for the suggestion.
 ![]()
 
 #### What-IF Tool - Results
 ![]()
 
 ### PIM for Microsoft Entra Roles
-explanation of what role was assigned and that this is a test user
+Test/confirmation that the `user Administrator` role eligibility/activation workflow works as intended.
 
 #### User - Role Not Active
 ![]()
