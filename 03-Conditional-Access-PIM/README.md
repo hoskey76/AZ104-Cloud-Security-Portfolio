@@ -52,61 +52,61 @@ The one thing I'd change is documentation format, not the technical work. This p
 Expected $0 — Conditional Access and PIM for Microsoft Entra roles are both included with the active Entra ID P2 trial carried over from Project 2. No billable Azure resources are required for this project.
 
 
-## Screenshots / Diagrams 🚧
+## Screenshots / Diagrams
 
 ### Conditional Access
 Added 4 policies to serve as base sign-in requirements under conditional access.
 
 #### Policies
-![]()
+![Conditional Access Policies Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Conditional%20access%20-%20policies.png)
 
 #### Policy Example - Block Legacy Authentication
-![]()
+![Block Legacy Authentication Policy Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Conditional%20access%20-%20block%20legacy%20authentication.png)
 
 #### What-IF Tool - Parameters
 This tool is extremely useful, kept me from having to manually test functionality. Thanks Claude for the suggestion.
-![]()
+![What-If tool parameters Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/What-If%20Tool%20-%20Parameters.png)
 
 #### What-IF Tool - Results
-![]()
+![What-if tool results Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/What-If%20Tool%20-%20Results.png)
 
 ### PIM for Microsoft Entra Roles
-Test/confirmation that the `user Administrator` role eligibility/activation workflow works as intended.
+Test/confirmation that the `User Administrator` role eligibility/activation workflow works as intended.
 
 #### User - Role Not Active
-![]()
+![User - Role Not Active Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20role%20not%20active.png)
 
 #### User - Role Eligible
-![]()
+![User - Role Eligible Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20role%20eligible.png)
 
 #### User - Activate Role
-![]()
+![User - Activate Role Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20activate%20role.png)
 
 #### User - Role Pending Approval
-![]()
+![User - Role Pending Approval Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20role%20pending%20approval.png)
 
 #### Administrator - Approve Request
-![]()
+![Administrator - Approve Request Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20admin%20approve%20role.png)
 
 #### Administrator - Grant Approval
-![]()
+![Administrator - Grant Approval Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20admin%20approving%20request.png)
 
 #### User - Role Active Assignment
-![]()
+![User - Role Active Assignment Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20role%20now%20active.png)
 
 #### PIM Audit History - Confirmation of Role Expiration
-![]()
+![PIM Audit History - Confirmation of Role Expiration Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/test%20user%20-%20confirm%20PIM%20activation%20expired.png)
 
 ### Access Review
 
 #### Creation
-![]()
+![Access Review creation Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Access%20review%20-%20create.png)
 
 #### Results
-![]()
+![Access Review results Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Access%20review%20-%20results.png)
 
 #### Approval
-![]()
+![Access Review approval Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Access%20review%20-%20approval.png)
 
 #### Outcome
-![]()
+![Access Review outcome Screenshot](https://github.com/hoskey76/AZ104-Cloud-Security-Portfolio/blob/main/03-Conditional-Access-PIM/Files/Access%20review%20-%20outcome.png)
